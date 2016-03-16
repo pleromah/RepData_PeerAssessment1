@@ -66,16 +66,18 @@ plot(meansteps_interval$interval, meansteps_interval$x,type = "l", xlab = "Time 
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-5-1.png)
+
 b. Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps
 
 
 ```r
-meansteps_interval[which(meansteps_interval$x == max(meansteps_interval$x)), ]
+maxstep <- meansteps_interval[which(meansteps_interval$x == max(meansteps_interval$x)), ]
+
+maxstep[1,1]
 ```
 
 ```
-##     interval        x
-## 104      835 206.1698
+## [1] 835
 ```
 ##6. Code to describe and show a strategy for imputing missing data
 
