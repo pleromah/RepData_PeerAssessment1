@@ -3,6 +3,7 @@ title: "Reproducible Research: Peer Assessment 1"
 author: "Olaide Allibalogun"
 date: "March 14, 2016"
 output: html_document
+keep_md: true  
 ---
 
 ```{r setup, include=FALSE}
